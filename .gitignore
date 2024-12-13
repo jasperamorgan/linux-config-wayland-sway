@@ -1,0 +1,12 @@
+# Ignore everything by default
+*
+
+# Add specific files
+!.gitignore
+!README.md
+
+# Add specific directories
+!helix
+!helix/*
+!sway
+!sway/*

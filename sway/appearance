@@ -1,0 +1,13 @@
+##
+# Configures how the editor looks
+##
+
+## todo: include theme config
+
+# window gaps
+gaps inner 0
+gaps outer 1
+
+# window border - hides title bar
+default_border pixel 0
+
