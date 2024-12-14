@@ -2,6 +2,37 @@
 
 Linux configuration files for a Wayland/Sway based desktop.
 
+# Dependencies
+
+* Waybar
+* bemenu
+* Victor Mono NerdFont 
+* Swaylock
+
+# Fonts
+
+Victor Mono font from [NerdFonts](https://www.programmingfonts.org/#victor-mono).
+
+
+
+
+# Sway
+
+Based on this config:
+
+* https://www.reddit.com/r/unixporn/comments/ptqbay/sway_my_tokyonight_inspired_rice/?rdt=49079
+* https://rubjo.github.io/victor-mono/
+* https://github.com/coodos/sway-dots
+
+Notes
+
+bemenu config: https://man.archlinux.org/man/extra/bemenu/bemenu.1.en
+
+https://github.com/swaywm/sway/wiki/Useful-add-ons-for-sway
+
+## Waybar
+
+
 # How to Use
 
 To use these configs, the steps are:
@@ -23,3 +54,10 @@ git checkout
 ```
 
 (See [this expanded explanation](https://www.digitalocean.com/community/tutorials/how-to-use-git-to-manage-your-user-configuration-files-on-a-linux-vps).)
+
+
+# References
+
+https://github.com/lokesh-krishna/dotfiles?tab=readme-ov-file#the-tokyo-night-setup
+https://monokai.pro/
+https://wallhaven.cc
