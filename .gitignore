@@ -10,3 +10,5 @@
 !helix/*
 !sway
 !sway/*
+!waybar
+!waybar/*
