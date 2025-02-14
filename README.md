@@ -13,6 +13,17 @@ Linux configuration files for a Wayland/Sway based desktop.
 
 Victor Mono font from [NerdFonts](https://www.programmingfonts.org/#victor-mono).
 
+## Install Steps
+```
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts
+wget -O VictorMono.zip https://github.com/ryanoasis/nerd-fonts/releases/latest/download/VictorMono.zip
+
+unzip VictorMono.zip -d VictorMono
+fc-cache -fv
+```
+  
+`
 # Sway
 
 Based on this config:
@@ -46,8 +57,8 @@ To use these configs, the steps are:
 cd ~/config-files
 git clone --no-checkout https://github.com/jasperamorgan/linux-config-wayland-sway.git
 
-cd ~/config-files
-git config --local core.worktree "../../"
+#Worktree is relative to the ~/config-files/linux-config-wayland-sway/.git directory
+git config --local core.worktree "../../../.config"
 
 git reset --hard origin/master
 git checkout
