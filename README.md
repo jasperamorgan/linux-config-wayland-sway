@@ -13,9 +13,6 @@ Linux configuration files for a Wayland/Sway based desktop.
 
 Victor Mono font from [NerdFonts](https://www.programmingfonts.org/#victor-mono).
 
-
-
-
 # Sway
 
 Based on this config:
@@ -32,6 +29,9 @@ https://github.com/swaywm/sway/wiki/Useful-add-ons-for-sway
 
 ## Waybar
 
+## Wallpapers
+
+Wallpapers are from https://wallhaven.cc
 
 # How to Use
 
@@ -60,4 +60,3 @@ git checkout
 
 https://github.com/lokesh-krishna/dotfiles?tab=readme-ov-file#the-tokyo-night-setup
 https://monokai.pro/
-https://wallhaven.cc
