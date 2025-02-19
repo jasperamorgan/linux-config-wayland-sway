@@ -17,4 +17,5 @@ client.unfocused        #414868 #24283b #a9b1d6 #7dcfff   #414868
 client.urgent           #e0af68 #e0af68 #1d202f #7dcfff   #e0af68
 
 # Wallpaper
-output * bg ~/.config/sway/wallpaper-lake.jpg fill
+#output * bg ~/.config/sway/wallpaper-lake.jpg fill
+output * bg ~/.config/sway/totoro-min.png fill
