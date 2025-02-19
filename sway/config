@@ -143,6 +143,10 @@ include /etc/sway/config-vars.d/*
     bindsym $mod+Shift+0 move container to workspace number 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
+
+    #Move workspace to a different window
+    bindsym $mod+Alt+Right move workspace to output right
+    bindsym $mod+Alt+Left move workspace to output left
 #
 # Layout stuff:
 #
@@ -205,6 +209,12 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+#
+# Screenshots
+#
+bindsym Alt+p exec grim -g "$(slurp)" - | wl-copy
+bindsym Alt+Shift+p exec grim -g "$(slurp -w)" - | wl-copy
+bindsym Alt+o exec grim -g "$(slurp -w)" screenshot.png
 
 include appearance
 include bar

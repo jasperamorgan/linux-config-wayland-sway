@@ -8,6 +8,45 @@ Linux configuration files for a Wayland/Sway based desktop.
 * bemenu
 * Victor Mono NerdFont 
 * Swaylock
+* wl-clipboard
+
+To install all the dependencies, run this script:
+
+```
+#!/bin/bash
+
+# Ensure the script runs with sudo privileges
+if [ "$EUID" -ne 0 ]; then
+    echo "Please run this script as root or with sudo."
+    exit 1
+fi
+
+# Update package lists
+echo "Updating package lists..."
+apt update -y
+
+# Install required packages
+echo "Installing Waybar, Bemenu, Swaylock, and wl-clipboard..."
+apt install -y waybar bemenu swaylock wl-clipboard
+
+# Install Victor Mono Nerd Font
+FONT_DIR="/usr/local/share/fonts"
+FONT_URL="https://github.com/ryanoasis/nerd-fonts/releases/latest/download/VictorMono.zip"
+
+echo "Downloading Victor Mono Nerd Font..."
+mkdir -p "$FONT_DIR/VictorMono"
+wget -O /tmp/VictorMono.zip "$FONT_URL"
+
+echo "Extracting and installing the font..."
+unzip -o /tmp/VictorMono.zip -d "$FONT_DIR/VictorMono"
+fc-cache -fv
+
+# Cleanup
+rm /tmp/VictorMono.zip
+
+echo "Installation complete! 🎉"
+  
+````
 
 # Fonts
 
